@@ -29,6 +29,7 @@ public class SuperStorage {
 
     public String getLine() {
         String result = null;
+        LOGGER.info("Get line " + pos);
         if (pos < storage.size()) {
             result = storage.get(pos);
             pos++;
